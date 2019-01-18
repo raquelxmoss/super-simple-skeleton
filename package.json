@@ -1,0 +1,25 @@
+{
+  "name": "simple-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "start": "babel-node server.js",
+    "bundle": "browserify index.js -t babelify -t uglifyify -o bundle.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "browserify-hmr": "^0.3.7",
+    "budo": "^11.6.0",
+    "mocha": "^5.2.0",
+    "uglifyify": "^5.0.1"
+  }
+}
